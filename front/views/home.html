@@ -17,12 +17,12 @@
             <div class="card" ng-if="film">
                 <img class="card-img-top img-responsive my-card-img" ng-src="{{film.poster}}" style="max-height: 300px;">
                 <div class="card-body">
-                    <h5 class="card-title">{{film.title}} ({{film.year}})</h5>
-                    <p class="card-text">Runtime: {{film.runtime}}</p>
-                    <p class="card-text">Genre: {{film.genre}}</p>
-                    <p class="card-text">IMDb Rating: {{film.imdbrating}}</p>
-                    <p class="card-text" ng-if="film.metascore != 0">Metascore: {{film.metascore}}</p>
-                    <a href="{{film.link}}" target="_blank" class="btn btn-outline-warning">Go to IMDb</a>
+                    <h5 class="card-title"><span class="card-movie-title">{{film.title}} <i>({{film.year}})</i></span></h5>
+                    <p class="card-text"><span class="card-info-title"><i class="fa fa-clock-o"></i> Runtime :</span> {{film.runtime}}</p>
+                    <p class="card-text"><span class="card-info-title"><i class="fa fa-book"></i> Genre :</span> {{film.genre}}</p>
+                    <p class="card-text"><span class="card-info-title"><i class="fa fa-star-o"></i></i> Rating :</span> {{film.imdbrating}}</p>
+                    <p class="card-text" ng-if="film.metascore != 0"><span class="card-info-title"><i class="fa fa-star"></i> Metascore :</span> {{film.metascore}}</p>
+                    <a href="{{film.link}}" target="_blank" class="btn btn-outline-warning"><i class="fa fa-external-link-alt"></i>Go to IMDb</a>
                 </div>
             </div>
         </div>
