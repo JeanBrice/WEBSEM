@@ -1,0 +1,11 @@
+{
+    "name": "WEBSEM_APP",
+    "main": "server.js",
+    "dependencies": {
+        "express": "~4.13.4",
+        "body-parser": "~1.15.1",
+        "method-override": "~2.0.2"
+    },
+    "author": "Jeremy PASCAL & Jean-Brice CANIHAC",
+    "description": "WEBSEM Project"
+}
