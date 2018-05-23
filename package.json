@@ -2,9 +2,10 @@
     "name": "WEBSEM_APP",
     "main": "server.js",
     "dependencies": {
-        "express": "~4.13.4",
-        "body-parser": "~1.15.1",
-        "method-override": "~2.0.2"
+        "express": "4.13.4",
+        "body-parser": "1.15.1",
+        "method-override": "2.0.2",
+        "sparql-client-2": "0.6.2"
     },
     "author": "Jeremy PASCAL & Jean-Brice CANIHAC",
     "description": "WEBSEM Project"
