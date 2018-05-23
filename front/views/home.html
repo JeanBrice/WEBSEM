@@ -20,7 +20,7 @@
                     <h5 class="card-title"><span class="card-movie-title">{{film.title.value}} <i>({{film.year.value}})</i></span></h5>
                     <p class="card-text"><span class="card-info-title"><i class="fa fa-clock-o"></i> Runtime :</span> {{film.runtime.value}}</p>
                     <p class="card-text"><span class="card-info-title"><i class="fa fa-book"></i> Genre :</span> {{film.genre.value}}</p>
-                    <p class="card-text"><span class="card-info-title"><i class="fa fa-star-o"></i></i> Rating :</span> {{film.imdbrating.value}}</p>
+                    <p class="card-text"><span class="card-info-title"><i class="fa fa-star-o"></i></i> Rating :</span> {{film.imdb.value}}</p>
                     <p class="card-text" ng-if="film.metascore != 0"><span class="card-info-title"><i class="fa fa-star"></i> Metascore :</span> {{film.metascore.value}}</p>
                     <a href="{{film.link.value}}" target="_blank" class="btn btn-outline-warning"><i class="fa fa-external-link-alt"></i>Go to IMDb</a>
                 </div>
