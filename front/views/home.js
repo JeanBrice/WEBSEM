@@ -1,33 +1,26 @@
 app.controller('homeCtrl', ($scope, NgMap, databaseService) => {
 
     $scope.getAllScenes = () => {
-      /* databaseService.getAllScenes().then(response => {
-          console.log(response);
-          $scope.scenes = response;
+        databaseService.getAllScenes().then(response => {
+            $scope.scenes = response.data;
+
         }, error => {
-          console.error(error);
-        }); */
-        $scope.scenes = databaseService.getAllScenes();
-        console.log($scope.scenes)
+            console.error(error);
+        });
     };
-
     $scope.getAllScenes();
-
+   
     NgMap.getMap().then(function (map) {
-        console.log(map.getCenter());
-        console.log('markers', map.markers);
         $scope.map = map;
     });
 
     $scope.getFilmDetails = (e, title) => {
-        /* databaseService.getFilmDetails(title)
+        databaseService.getFilmDetails(title)
             .then((response) => {
-                console.log(response);
-                $scope.film = response;
+                $scope.film = response.data.results.bindings[0];
             }, (error) => {
                 console.error(error);
-            }); */
-        $scope.film = databaseService.getFilmDetails(title);
+            });
     };
 
 });
