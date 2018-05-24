@@ -1,16 +1,36 @@
 # WEBSEM
 
-From root folder:
+## XMLParser
 
--> npm install
+· Java main() that parse the NYC open data XML file, containing all film data
 
--> node server.js
+· Asks [**OMDB API**](http://www.omdbapi.com/) to gather more data
+
+· Compile both datasources into one single, more complete data
+
+· Insert all triples into SPARQL database, using **Fuseki**
+
+
+## Using Fuseki
+
+Fuseki is a SPARQL Database server, which you can run localy.
+
+· (You can download it here)[https://jena.apache.org/download/#jena-fuseki]
+
+· Once you started your Fuseki server, go to *localhost:3030* and input the **Ontology** 
+
+· You can find the Ontology in the resources folder on **Github** : (NYC_Ontology.owl)[https://github.com/JeanBrice/WEBSEM/blob/master/resources/NYC_ontology.owl]
+
+· Once you have your databse running, you only need to run the Java main() to populate the database, and to run the **node.js server**
+
+
+## Application
+
+From root folder, run
+· npm install
+
+· node server.js
 
 In your favourite browser:
 
--> localhost:8080
-
-
-## XMLParser
-
-**Read XML Data from NYC Open Data file**
+· localhost:8080
