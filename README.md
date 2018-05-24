@@ -2,7 +2,7 @@
 
 ## XMLParser
 
-· Java main() that parse the NYC open data XML file, containing all film data
+· Java main() that parses the NYC open data XML file, containing all film data
 
 · Asks [**OMDB API**](http://www.omdbapi.com/) to gather more data
 
@@ -21,7 +21,9 @@ Fuseki is a SPARQL Database server, which you can run localy.
 
 · You can find the Ontology in the resources folder on **Github** : [NYC_Ontology.owl](https://github.com/JeanBrice/WEBSEM/blob/master/resources/NYC_ontology.owl)
 
-· Once you have your databse running, you only need to run the Java main() to populate the database, and to run the **node.js server**
+· Before running the Java main(), do not forget to user your own OMDB API key
+
+· Once you have your database running, you only need to run the Java main() to populate the database, and to run the **node.js server**
 
 
 ## Application
